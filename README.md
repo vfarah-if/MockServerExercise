@@ -35,20 +35,20 @@ Setup a POC for  https://www.mocks-server.org/ and get an [overview](https://www
 
 3. Added Nodemon for restarting project to speed up development
 
-4. Added [Jest](https://jestjs.io/docs/getting-started), Mocha is faster and more typical of a node project, but found Jest to be easier to use for most developers so keep it in my mix for simplicity
+4. Added [Jest](https://jestjs.io/docs/getting-started), Mocha is faster and more typical of a node project, but found Jest to be easier to use for most developers
 
    ### Environment
 
-   | Command          | Description                                                  |
-   | ---------------- | ------------------------------------------------------------ |
-   | `yarn start`     | Start the project to run                                     |
-   | `yarn start:dev` | Starts the project using Node Monitor to restart the application when files change |
-   | `yarn lint`      | Run lint to fix any issues manually                          |
-   | `yarn build`     | Run build to generate dist folder with built project         |
-
-   
-
-   
+   | Command              | Description                                                  |
+   | :------------------- | :----------------------------------------------------------- |
+   | **`yarn start`**     | Start the project to run                                     |
+   | **`yarn start:dev`** | Starts the project using Node Monitor to restart the application when files change |
+   | **`yarn lint`**      | Run lint to fix any issues manually                          |
+   | **`yarn build`**     | Run build to generate dist folder with built project         |
+   | **`yarn coverage`**  | Runs coverage mapped against an 80% minimum rate             |
+   |                      |                                                              |
+   |                      |                                                              |
+   |                      |                                                              |
 
 ## Durability options
 

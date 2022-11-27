@@ -2,9 +2,10 @@
 ✔ Setup eslint @today @done(22-11-27 13:47)
 ✔ Configure eslintignore to get the linting out of the way for various things that will be introduced @today @done(22-11-27 14:11)
 ✔ Add basic debugging mechanism for debugging application @today @done(22-11-27 14:10)
+☐ Create .env config @high
 ☐ Create testing framework that will suit this code @high
-    ☐ Create unit test framework (JEST (Keep it simple)) @high
-    ☐ Create cypress unit test (Visual tests to demonstrate which is better) @low
+    ✔ Create unit test framework (JEST (Keep it simple)) @high @done(22-11-27 22:06)
+    ☐ Create cypress unit test (Visual test framework to demonstrate which is better) @low
 ☐ Understand how https://www.mocks-server.org/ works @critical
 ☐ Create a POC mocking some public API with several variants of what the Public API represents @high
 ☐ Test this so it is easy to understand by example how this will work @high
