@@ -23,6 +23,33 @@ Setup a POC for  https://www.mocks-server.org/ and get an [overview](https://www
 5. Configure **HTTPS** https://www.mocks-server.org/docs/guides/https-protocol/
 6. Enable **CORS** with https://www.mocks-server.org/docs/guides/using-the-options-method/
 
+## Setting up environment
+
+1. [Setup](https://blog.appsignal.com/2022/01/19/how-to-set-up-a-nodejs-project-with-typescript.html) Typescript, [Eslint](https://eslint.org/) and Node basics to run a project that will help facilitate the Mocks Server POC
+
+   ```bash
+   yarn lint
+   ```
+
+2. Added quick **debugging** tools for vscode to make life easier for anyone wanting to play with this POC
+
+3. Added Nodemon for restarting project to speed up development
+
+4. Added [Jest](https://jestjs.io/docs/getting-started), Mocha is faster and more typical of a node project, but found Jest to be easier to use for most developers
+
+   ### Environment
+
+   | Command              | Description                                                  |
+   | :------------------- | :----------------------------------------------------------- |
+   | **`yarn start`**     | Start the project to run                                     |
+   | **`yarn start:dev`** | Starts the project using Node Monitor to restart the application when files change |
+   | **`yarn lint`**      | Run lint to fix any issues manually                          |
+   | **`yarn build`**     | Run build to generate dist folder with built project         |
+   | **`yarn coverage`**  | Runs coverage mapped against an 80% minimum rate             |
+   |                      |                                                              |
+   |                      |                                                              |
+   |                      |                                                              |
+
 ## Durability options
 
 Persistence or configuration of data can be done ephemerally using MongoDb in memory using https://github.com/nodkz/mongodb-memory-server with the advantage that no devops resources needs to be setup and seeding of data can be done within some seeding method to make this generic, solving durability in a lightway solution. This is an ephemeral solution, but because we have a seeding mechanism, this can always be reset to determinable state, making API's more useful.
