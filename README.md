@@ -25,8 +25,11 @@ Setup a POC for  https://www.mocks-server.org/ and get an [overview](https://www
 
 ## Setting up environment
 
-1. Configure [Typescript](https://blog.appsignal.com/2022/01/19/how-to-set-up-a-nodejs-project-with-typescript.html) and Node
+1. [Setup](https://blog.appsignal.com/2022/01/19/how-to-set-up-a-nodejs-project-with-typescript.html) Typescript, [Eslint](https://eslint.org/) and Node basics to run a project that will help facilitate the Mocks Server POC
+
 2. 
+
+   
 
 
 

@@ -1,11 +1,9 @@
 "use strict"
-function sayMyName(name:string): void {
-    if(name === 'Farah') {
-        console.log("You're right 👍")
-    } else {
-        console.log("You're wrong 👎");
-    }
-}
+import express from "express";
+const app = express();
 
-
-sayMyName('Farahs')
+app.get("/", function (req, res) {
+    res.send("Hello World");
+  });
+   
+  app.listen(8000);
