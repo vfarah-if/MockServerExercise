@@ -33,6 +33,10 @@ Setup a POC for  https://www.mocks-server.org/ and get an [overview](https://www
 
 2. Added quick **debugging** tools for vscode to make life easier for anyone wanting to play with this POC
 
+3. Added Nodemon for restarting project to speed up development
+
+4. Added [Jest](https://jestjs.io/docs/getting-started), Mocha is faster and more typical of a node project, but found Jest to be easier to use for most developers so keep it in my mix for simplicity
+
    ### Environment
 
    | Command          | Description                                                  |
