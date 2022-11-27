@@ -23,6 +23,13 @@ Setup a POC for  https://www.mocks-server.org/ and get an [overview](https://www
 5. Configure **HTTPS** https://www.mocks-server.org/docs/guides/https-protocol/
 6. Enable **CORS** with https://www.mocks-server.org/docs/guides/using-the-options-method/
 
+## Setting up environment
+
+1. Configure [Typescript](https://blog.appsignal.com/2022/01/19/how-to-set-up-a-nodejs-project-with-typescript.html) and Node
+2. 
+
+
+
 ## Durability options
 
 Persistence or configuration of data can be done ephemerally using MongoDb in memory using https://github.com/nodkz/mongodb-memory-server with the advantage that no devops resources needs to be setup and seeding of data can be done within some seeding method to make this generic, solving durability in a lightway solution. This is an ephemeral solution, but because we have a seeding mechanism, this can always be reset to determinable state, making API's more useful.

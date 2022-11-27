@@ -1,3 +1,4 @@
+☐ Setup yarn and typescript node application @today
 ☐ Understand how https://www.mocks-server.org/ works @critical
 ☐ Create a POC mocking some public API with several variants of what the Public API represents @high
 ☐ Test this so it is easy to understand by example how this will work @high
