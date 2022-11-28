@@ -1,8 +1,15 @@
-import express from 'express'
-const app = express()
+const { createServer } = require('@mocks-server/main')
+const collections = require('../mocks/collections.json')
+const userRoutes = require('../mocks/routes/users')
+const commonRoutes = require('../mocks/routes/common')
 
-app.get('/', function (_req, res): void {
-  res.send('Hello World')
-})
+const server = createServer()
 
-app.listen(8000)
+const configureMocks = async () => {
+  const { loadRoutes, loadCollections } = server.mock.createLoaders()
+  const routes = [...commonRoutes, ...userRoutes]
+  loadCollections(collections)
+  loadRoutes(routes)
+  server.mock.collections.select('all-users')
+}
+server.start().then(configureMocks)

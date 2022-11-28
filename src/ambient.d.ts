@@ -1,1 +1,1 @@
-// declare module '<NODE_MODULE>'
+declare module '@mocks-server/main'
