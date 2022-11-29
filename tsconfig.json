@@ -4,7 +4,9 @@
         "outDir": "dist",
         "strict": true, 
         "esModuleInterop": true,
-        "resolveJsonModule": true 
+        "resolveJsonModule": true,
+        "target": "ES2022",
+        "module": "CommonJS"
     },
     "include": ["src"],
     "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"]
