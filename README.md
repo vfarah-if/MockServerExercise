@@ -1,4 +1,25 @@
+# **Mock Server (Camouflage) POC**
+
+![image-20221129223950617](./images/comouflage.png)
+
+## Low Level Requirements
+
+1. Must utilise Typescript
+
+2. Must demonstrate the use and benefit after with a pros and cons
+
+3. Must represent some **public API** (define here as working concept) that may be easy to replicate so tests can compare with what has been generated
+
+   2.1. https://petstore3.swagger.io/ is a good example covering a big range of things from an open text point of view
+
+   2.2. https://gorest.co.in/ is a good example of many different API's without swagger that can be sampled for the purpose of trying to manualy setup an endpoint
+
+### Camouflage understanding
+
+​	TODO:
+
 # Mocks Server POC
+
 Setup a POC for  https://www.mocks-server.org/ and get an [overview](https://www.mocks-server.org/docs/overview/) of how this all works. Setup the [installation](https://www.mocks-server.org/docs/installation/) and a base typescript project. Follow the [quick start](https://www.mocks-server.org/docs/quick-start/) to get this up and running quickly.
 
 ![Mocks Server](./images/mocks-server.png)
@@ -23,32 +44,9 @@ Setup a POC for  https://www.mocks-server.org/ and get an [overview](https://www
 5. Configure **HTTPS** https://www.mocks-server.org/docs/guides/https-protocol/
 6. Enable **CORS** with https://www.mocks-server.org/docs/guides/using-the-options-method/
 
-## Setting up environment
+### POC
 
-1. [Setup](https://blog.appsignal.com/2022/01/19/how-to-set-up-a-nodejs-project-with-typescript.html) Typescript, [Eslint](https://eslint.org/) and Node basics to run a project that will help facilitate the Mocks Server POC
 
-   ```bash
-   yarn lint
-   ```
-
-2. Added quick **debugging** tools for vscode to make life easier for anyone wanting to play with this POC
-
-3. Added Nodemon for restarting project to speed up development
-
-4. Added [Jest](https://jestjs.io/docs/getting-started), Mocha is faster and more typical of a node project, but found Jest to be easier to use for most developers
-
-   ### Environment
-
-   | Command              | Description                                                  |
-   | :------------------- | :----------------------------------------------------------- |
-   | **`yarn start`**     | Start the project to run                                     |
-   | **`yarn start:dev`** | Starts the project using Node Monitor to restart the application when files change |
-   | **`yarn lint`**      | Run lint to fix any issues manually                          |
-   | **`yarn build`**     | Run build to generate dist folder with built project         |
-   | **`yarn coverage`**  | Runs coverage mapped against an 80% minimum rate             |
-   |                      |                                                              |
-   |                      |                                                              |
-   |                      |                                                              |
 
 ## Durability options
 
