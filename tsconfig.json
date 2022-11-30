@@ -8,6 +8,6 @@
         "target": "ES2022",
         "module": "CommonJS"
     },
-    "include": ["src"],
+    "include": ["src", "camouflage"],
     "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"]
   }

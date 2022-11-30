@@ -4,11 +4,9 @@
 
 ## Low Level Requirements
 
-1. Must utilise Typescript
+1. Must demonstrate the use and benefit after with a pros and cons
 
-2. Must demonstrate the use and benefit after with a pros and cons
-
-3. Must represent some **public API** (define here as working concept) that may be easy to replicate so tests can compare with what has been generated
+2. Must represent some **public API** (define here as working concept) that may be easy to replicate so tests can compare with what has been generated
 
    2.1. https://petstore3.swagger.io/ is a good example covering a big range of things from an open text point of view
 
@@ -16,7 +14,41 @@
 
 ### Camouflage understanding
 
-​	TODO:
+1. Everything is documented within https://github.com/testinggospels/camouflage
+
+   ```bash
+   npm install -g camouflage-server
+   camouflage --version
+   ```
+
+2. Initialise a version into a folder
+
+   ```bash
+   npx degit camouflagejs/init <folder>
+   # or inside folder 
+   camouflage init
+   ```
+
+3. Here are the full details https://shubhendumadhukar.github.io/camouflage-jsdocs/
+
+### POC
+
+Create a branch https://github.com/vfarah-if/MockServerExercise/tree/feature/camouflage or pull request https://github.com/vfarah-if/MockServerExercise/pull/3 
+
+### Cons
+
+1. Need to install cli and interact using the cli and the cli is a little clunky if you don't config within the directory, doesnt find the endpoints
+2. Simple interface, doesnt support typescript or normal programatic usage and seems to have gone off course from the original discontinued MockServoce
+3. Seems powerful for simple endpoints but seems over complicated for programmatically enhanceing endpoints with middleware that will be more then a simple canned response
+4. The documentation is rubbish, mostly
+
+### Pros
+
+1. Good monitoring if that is somethign that can be useful
+2. Easy to put together simple endpoints with basic validation
+3. Easy to generate some simple examples in a lot of areas using the CLI but some examples are impossible to get working
+
+
 
 # Mocks Server POC
 
@@ -43,8 +75,6 @@ Setup a POC for  https://www.mocks-server.org/ and get an [overview](https://www
 4. Very easy to setup with **Docker** https://www.mocks-server.org/docs/integrations/docker/
 5. Configure **HTTPS** https://www.mocks-server.org/docs/guides/https-protocol/
 6. Enable **CORS** with https://www.mocks-server.org/docs/guides/using-the-options-method/
-
-### POC
 
 
 
