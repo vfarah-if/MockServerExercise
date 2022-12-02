@@ -98,10 +98,10 @@ Create a branch https://github.com/vfarah-if/MockServerExercise/tree/feature/cam
 1. Final solution is to use Express itself and develop the routes with the simplest way of testing all of this, see code in [main](https://github.com/vfarah-if/MockServerExercise) using  this solution
 
    - Use faker to [faker](https://fakerjs.dev/) up data
-   - Use J[SON Schema](https://json-schema.org/) for creating open schema validation and [json schema faker](https://github.com/json-schema-faker/json-schema-faker) for generating fake data and see an actual [example](https://codesandbox.io/s/n42k8?file=/api/generateSchema.js) for generating this online
+   - Use [JSON Schema](https://json-schema.org/) for creating open schema validation and [json schema faker](https://github.com/json-schema-faker/json-schema-faker) for generating fake data and see an actual [example](https://codesandbox.io/s/n42k8?file=/api/generateSchema.js) for generating this online and [getting started](https://json-schema.org/learn/getting-started-step-by-step.html) with JSON schema
    - Use [supertest](https://www.npmjs.com/package/supertest) for creating simple integration tests with express
 
-2. Alternative using [msw](https://github.com/mswjs/msw)
+2. Alternative using [msw](https://github.com/mswjs/msw) and a full article on a [deep dive](https://dev.to/kettanaito/api-mocking-strategies-for-javascript-applications-48kl) into the rational of why this exists
 
 3. There are many vscode plugins to help mock api's
 
