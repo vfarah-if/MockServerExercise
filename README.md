@@ -91,11 +91,21 @@ Setup a POC for  https://www.mocks-server.org/ and get an [overview](https://www
 
 ### POC
 
+Create a branch https://github.com/vfarah-if/MockServerExercise/tree/feature/camouflage or pull request https://github.com/vfarah-if/MockServerExercise/pull/2
+
 ## Alternative solutions
 
-1. Final solution is to use express itself and develop the routes with the simplest way of testing all of this, see code in main using   
+1. Final solution is to use Express itself and develop the routes with the simplest way of testing all of this, see code in [main](https://github.com/vfarah-if/MockServerExercise) using  this solution
+
+   - Use faker to [faker](https://fakerjs.dev/) up data
+   - Use J[SON Schema](https://json-schema.org/) for creating open schema validation and [json schema faker](https://github.com/json-schema-faker/json-schema-faker) for generating fake data and see an actual [example](https://codesandbox.io/s/n42k8?file=/api/generateSchema.js) for generating this online
+   - Use [supertest](https://www.npmjs.com/package/supertest) for creating simple integration tests with express
+
 2. Alternative using [msw](https://github.com/mswjs/msw)
+
 3. There are many vscode plugins to help mock api's
+
+   ![Mock Server](./images/vscode-extensions.png)
 
 Create a branch https://github.com/vfarah-if/MockServerExercise/tree/feature/mocks-server or pull request https://github.com/vfarah-if/MockServerExercise/pull/2
 
