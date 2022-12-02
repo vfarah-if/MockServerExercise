@@ -1,8 +1,7 @@
-import express from 'express'
-const app = express()
+import app from './app'
 
-app.get('/', function (_req, res): void {
-  res.send('Hello World')
+const PORT = 8000
+
+app.listen(PORT, (): void => {
+  console.log(`Server Running here 👉 https://localhost:${PORT}`)
 })
-
-app.listen(8000)

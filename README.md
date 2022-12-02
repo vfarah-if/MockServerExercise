@@ -16,7 +16,39 @@
 
 ### Camouflage understanding
 
-​	TODO:
+1. Everything is documented within https://github.com/testinggospels/camouflage
+
+   ```bash
+   npm install -g camouflage-server
+   camouflage --version
+   ```
+
+2. Initialise a version into a folder
+
+   ```bash
+   npx degit camouflagejs/init <folder>
+   # or inside folder 
+   camouflage init
+   ```
+
+3. Here are the full details https://shubhendumadhukar.github.io/camouflage-jsdocs/
+
+### POC
+
+Create a branch https://github.com/vfarah-if/MockServerExercise/tree/feature/camouflage or pull request https://github.com/vfarah-if/MockServerExercise/pull/3 
+
+### Cons
+
+1. Need to install cli and interact using the cli and the cli is a little clunky if you don't config within the directory, doesnt find the endpoints
+2. Simple interface, doesnt support typescript or normal programatic usage and seems to have gone off course from the original discontinued MockServoce
+3. Seems powerful for simple endpoints but seems over complicated for programmatically enhanceing endpoints with middleware that will be more then a simple canned response
+4. The documentation is rubbish, mostly
+
+### Pros
+
+1. Good monitoring if that is somethign that can be useful
+2. Easy to put together simple endpoints with basic validation
+3. Easy to generate some simple examples in a lot of areas using the CLI but some examples are impossible to get working
 
 # Mocks Server POC
 
@@ -38,15 +70,34 @@ Setup a POC for  https://www.mocks-server.org/ and get an [overview](https://www
 ### Mocks Server understanding
 
 1. Has a **Cypress Integration** that will make this a doddle to test https://www.mocks-server.org/docs/integrations/cypress/ visually and simply making changes quick and easy
+
 2. Allows configuration of **middleware** to allow logic to be assigned to endpoints https://www.mocks-server.org/docs/usage/variants/middleware/
+
 3. Can configure with **Open API** https://www.mocks-server.org/docs/integrations/openapi/
+
 4. Very easy to setup with **Docker** https://www.mocks-server.org/docs/integrations/docker/
+
 5. Configure **HTTPS** https://www.mocks-server.org/docs/guides/https-protocol/
+
 6. Enable **CORS** with https://www.mocks-server.org/docs/guides/using-the-options-method/
+
+7. Run
+
+   ```bash
+   yarn mocks
+   #  or 
+   yarn start
+   ```
 
 ### POC
 
+## Alternative solutions
 
+1. Final solution is to use express itself and develop the routes with the simplest way of testing all of this, see code in main using   
+2. Alternative using [msw](https://github.com/mswjs/msw)
+3. There are many vscode plugins to help mock api's
+
+Create a branch https://github.com/vfarah-if/MockServerExercise/tree/feature/mocks-server or pull request https://github.com/vfarah-if/MockServerExercise/pull/2
 
 ## Durability options
 

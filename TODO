@@ -7,7 +7,7 @@
     ✔ Create unit test framework (JEST (Keep it simple)) @high @done(22-11-27 22:06)
     ☐ Create cypress unit test (Visual test framework to demonstrate which is better) @low
 ✔ Understand how https://www.mocks-server.org/ works @critical @done(22-11-29 23:04)
-☐ Understand how Camouflage works @critical
+✔ Understand how Camouflage works @critical @done(22-12-02 08:00)
 ☐ Create a POC mocking some public API with several variants of what the Public API represents @high
 ☐ Test this so it is easy to understand by example how this will work @high
 ☐ Share this with the developers to understand how POC will work @critical
