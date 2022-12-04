@@ -1,7 +1,7 @@
 import request from 'supertest'
 
 import app from './app'
-import carsJson from './data/carlist.json'
+import { getAllCars } from './data/getAllCars'
 import { getCarByBrand } from './data/getCarByBrand'
 
 describe('GET /helloworld', () => {
@@ -14,23 +14,24 @@ describe('GET /helloworld', () => {
 })
 
 describe('GET /cars', () => {
-  test('should return cars json', async () => {
+  test('should return 200 succeeds cars as json', async () => {
     const response = await request(app).get('/cars')
+    const expected = getAllCars()
 
     expect(response.statusCode).toBe(200)
-    expect(response.body).toEqual({ count: carsJson.length, result: carsJson })
+    expect(response.body).toEqual(expected)
   })
 })
 
 describe('GET /cars/:brand', () => {
-  test('should return a car', async () => {
+  test('should return a 200 succeeds if brand exists', async () => {
     const response = await request(app).get(`/cars/seat`)
     const car = getCarByBrand('seat')
     expect(response.statusCode).toBe(200)
     expect(response.body).toEqual(car)
   })
 
-  test('should return not found when brand unknown', async () => {
+  test('should return 404 not found when brand unknown', async () => {
     const response = await request(app).get(`/cars/unknown`)
     expect(response.statusCode).toBe(404)
   })

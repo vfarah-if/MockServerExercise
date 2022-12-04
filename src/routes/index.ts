@@ -1,8 +1,8 @@
 import express, { Request, Response, NextFunction } from 'express'
 import { faker } from '@faker-js/faker'
 
-import carsJson from '../data/carlist.json'
 import { getCarByBrand } from '../data/getCarByBrand'
+import { getAllCars } from '../data/getAllCars'
 
 const router = express.Router()
 
@@ -11,7 +11,7 @@ router.get('/helloworld', (_req: Request, res: Response): void => {
 })
 
 router.get('/cars', (_req: Request, res: Response): void => {
-  res.send({ count: carsJson.length, result: carsJson })
+  res.send(getAllCars())
 })
 
 router.get(
